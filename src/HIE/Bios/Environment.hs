@@ -98,7 +98,7 @@ getCacheDir fp = do
 setLinkerOptions :: DynFlags -> DynFlags
 setLinkerOptions df = df {
     ghcLink   = LinkInMemory
-  , hscTarget = HscNothing
+  , hscTarget = HscInterpreted
   , ghcMode = CompManager
   }
 
